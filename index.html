@@ -5,10 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 4</title>
+    <link rel="stylesheet" href="Styles.css" />
 </head>
 
 <body>
-
+    <form action="#" method="POST">
+        <h2>Auto Parts Order Form</h2>
+            
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+            
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+            
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+        <label for="make">Make:</label>
+        <input type="text" id="make" name="make" placeholder="Make" required>
+            
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" placeholder="Model" required>
+            
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Year" min="1900" max="2025" required>
+            
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+            
+        <label for="spare_part">Spare Part:</label>
+        <input type="text" id="spare_part" name="spare_part" placeholder="Enter the spare part you need" required>
+            
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter the quantity of the spare part you need" min="1" required>
+            
+        <label for="comments">Comment:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comment" rows="4"></textarea>
+            
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>
